@@ -1,8 +1,17 @@
 import { StyleSheet } from "react-native";
-import TabNavigator from "./navigation/TabNavigator";
+
+import { NavigationContainer } from "@react-navigation/native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import StartNavigation from "./navigation/StartNavigatoion";
 
 export default function App() {
-  return <TabNavigator />;
+  return (
+    <NavigationContainer>
+      <SafeAreaProvider>
+        <StartNavigation />
+      </SafeAreaProvider>
+    </NavigationContainer>
+  );
 }
 
 const styles = StyleSheet.create({

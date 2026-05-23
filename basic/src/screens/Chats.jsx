@@ -2,14 +2,14 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const Home = () => {
+const Chats = () => {
   return (
     <SafeAreaView>
-      <Text>Home</Text>
+      <Text>Chats</Text>
     </SafeAreaView>
   );
 };
 
-export default Home;
+export default Chats;
 
 const styles = StyleSheet.create({});
