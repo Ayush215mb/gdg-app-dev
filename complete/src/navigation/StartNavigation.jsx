@@ -1,4 +1,3 @@
-import { View, Text } from "react-native";
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
@@ -20,7 +19,7 @@ const StartNavigation = () => {
 
         // Bottom Tab Style
         tabBarStyle: {
-          position: 'absolute',
+          position: "absolute",
           height: 90,
           elevation: 5,
           paddingBottom: 20,
@@ -54,28 +53,18 @@ const StartNavigation = () => {
           } else if (route.name === "Profile") {
             iconName = focused ? "person" : "person-outline";
           } else if (route.name === "Chats") {
-            iconName = focused
-              ? "chatbubble"
-              : "chatbubble-outline";
+            iconName = focused ? "chatbubble" : "chatbubble-outline";
           } else if (route.name === "Settings") {
-            iconName = focused
-              ? "settings"
-              : "settings-outline";
+            iconName = focused ? "settings" : "settings-outline";
           }
 
-          return (
-            <Ionicons
-              name={iconName}
-              size={24}
-              color={color}
-            />
-          );
+          return <Ionicons name={iconName} size={24} color={color} />;
         },
       })}
     >
       <Tab.Screen component={Home} name="Home" />
-      <Tab.Screen component={Profile} name="Profile" />
       <Tab.Screen component={Chats} name="Chats" />
+      <Tab.Screen component={Profile} name="Profile" />
       <Tab.Screen component={Settings} name="Settings" />
     </Tab.Navigator>
   );
