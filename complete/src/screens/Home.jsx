@@ -21,11 +21,7 @@ const Home = () => {
         </View>
 
         <TouchableOpacity style={styles.notificationBtn}>
-          <Ionicons
-            name="notifications-outline"
-            size={24}
-            color="#000"
-          />
+          <Ionicons name="notifications-outline" size={24} color="#000" />
         </TouchableOpacity>
       </View>
 
@@ -38,25 +34,20 @@ const Home = () => {
         {/* Banner */}
         <View style={styles.banner}>
           <View style={{ flex: 1 }}>
-            <Text style={styles.bannerTitle}>
-              Build Amazing Apps
-            </Text>
+            <Text style={styles.bannerTitle}>Build Amazing Apps</Text>
 
             <Text style={styles.bannerSubtitle}>
-              Continue learning React Native and become a
-              pro developer.
+              Continue learning React Native and become a pro developer.
             </Text>
 
             <TouchableOpacity style={styles.bannerBtn}>
-              <Text style={styles.bannerBtnText}>
-                Get Started
-              </Text>
+              <Text style={styles.bannerBtnText}>Get Started</Text>
             </TouchableOpacity>
           </View>
 
           <Image
             source={{
-              uri: "https://cdn-icons-png.flaticon.com/512/1055/1055687.png",
+              uri: "https://i.pinimg.com/736x/47/d5/6e/47d56ecc6586a3a257ea10a3c19481ff.jpg",
             }}
             style={styles.bannerImage}
           />
@@ -67,127 +58,77 @@ const Home = () => {
 
         <View style={styles.categoryContainer}>
           <TouchableOpacity style={styles.categoryCard}>
-            <Ionicons
-              name="phone-portrait-outline"
-              size={28}
-              color="#6C63FF"
-            />
+            <Ionicons name="phone-portrait-outline" size={28} color="#6C63FF" />
 
             <Text style={styles.categoryText}>Apps</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.categoryCard}>
-            <Ionicons
-              name="code-slash-outline"
-              size={28}
-              color="#6C63FF"
-            />
+            <Ionicons name="code-slash-outline" size={28} color="#6C63FF" />
 
             <Text style={styles.categoryText}>Coding</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.categoryCard}>
-            <Ionicons
-              name="color-palette-outline"
-              size={28}
-              color="#6C63FF"
-            />
+            <Ionicons name="color-palette-outline" size={28} color="#6C63FF" />
 
             <Text style={styles.categoryText}>Design</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.categoryCard}>
-            <Ionicons
-              name="rocket-outline"
-              size={28}
-              color="#6C63FF"
-            />
+            <Ionicons name="rocket-outline" size={28} color="#6C63FF" />
 
             <Text style={styles.categoryText}>Startup</Text>
           </TouchableOpacity>
         </View>
 
         {/* Recent Projects */}
-        <Text style={styles.sectionTitle}>
-          Recent Projects
-        </Text>
+        <Text style={styles.sectionTitle}>Recent Projects</Text>
 
         <View style={styles.projectCard}>
           <View style={styles.projectLeft}>
-            <Ionicons
-              name="logo-react"
-              size={35}
-              color="#61DBFB"
-            />
+            <Ionicons name="logo-react" size={35} color="#61DBFB" />
           </View>
 
           <View style={{ flex: 1 }}>
-            <Text style={styles.projectTitle}>
-              React Native App
-            </Text>
+            <Text style={styles.projectTitle}>React Native App</Text>
 
             <Text style={styles.projectSubtitle}>
               Modern mobile application UI
             </Text>
           </View>
 
-          <Ionicons
-            name="chevron-forward"
-            size={22}
-            color="gray"
-          />
+          <Ionicons name="chevron-forward" size={22} color="gray" />
         </View>
 
         <View style={styles.projectCard}>
           <View style={styles.projectLeft}>
-            <Ionicons
-              name="globe-outline"
-              size={35}
-              color="#FF9800"
-            />
+            <Ionicons name="globe-outline" size={35} color="#FF9800" />
           </View>
 
           <View style={{ flex: 1 }}>
-            <Text style={styles.projectTitle}>
-              Portfolio Website
-            </Text>
+            <Text style={styles.projectTitle}>Portfolio Website</Text>
 
             <Text style={styles.projectSubtitle}>
               Responsive frontend design
             </Text>
           </View>
 
-          <Ionicons
-            name="chevron-forward"
-            size={22}
-            color="gray"
-          />
+          <Ionicons name="chevron-forward" size={22} color="gray" />
         </View>
 
         <View style={styles.projectCard}>
           <View style={styles.projectLeft}>
-            <Ionicons
-              name="server-outline"
-              size={35}
-              color="#4CAF50"
-            />
+            <Ionicons name="server-outline" size={35} color="#4CAF50" />
           </View>
 
           <View style={{ flex: 1 }}>
-            <Text style={styles.projectTitle}>
-              Backend API
-            </Text>
+            <Text style={styles.projectTitle}>Backend API</Text>
 
-            <Text style={styles.projectSubtitle}>
-              Node.js & MongoDB server
-            </Text>
+            <Text style={styles.projectSubtitle}>Node.js & MongoDB server</Text>
           </View>
 
-          <Ionicons
-            name="chevron-forward"
-            size={22}
-            color="gray"
-          />
+          <Ionicons name="chevron-forward" size={22} color="gray" />
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -206,7 +147,7 @@ const styles = StyleSheet.create({
   scrollView: {
     flex: 1,
   },
-  
+
   scrollContainer: {
     paddingHorizontal: 20,
     paddingBottom: 60,
